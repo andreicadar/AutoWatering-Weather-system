@@ -22,4 +22,4 @@ After the Raspberry PI is powered on it also powers the Arduino which is connect
 
 The [**weather script**](RaspberryGetWeather.py) is executed on the RPI by a cronjob every two minutes.
 <br>
-When it is executed is sends through serial communication all the weather information to the the Arduino.
+When it is executed it performs a basic web scarp using the [**BeautifulSoup4**](https://pypi.org/project/beautifulsoup4/) library to get the weather information for a city, in this case Cluj-Napoca, then it sends through serial communication all the weather information to the the Arduino.
